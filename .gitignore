@@ -1,0 +1,29 @@
+# Sensitive or generated datasets are managed outside Git.
+/data/raw/nanjing/*
+!/data/raw/nanjing/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+/data/synthetic/*
+!/data/synthetic/.gitkeep
+
+# Local experiment and model artifacts.
+**/artifacts/
+**/checkpoints/
+**/runs/
+*.ckpt
+*.pt
+*.pth
+
+# Python caches and local environments (for later development stages).
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Editors and operating systems.
+.idea/
+.vscode/
+.DS_Store
